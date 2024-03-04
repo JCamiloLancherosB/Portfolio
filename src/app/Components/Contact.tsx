@@ -1,13 +1,16 @@
 import React from 'react'
 // Skills description, images, autoplay, swiper
+interface ContactProps {
+    phrase: string;
+}
 
-const Contact = () => {
-
+const Contact: React.FC<ContactProps> = ({phrase}) => {
+    
     return (
         <>
 
         <form action="" className="font-bold text-green-400 absolute top-5 right-10 text-center">
-            Ingresa tus datos
+            <span>¿Que te ha parecido mi portafolio? {phrase}</span>
             <div className="mb-2">
                 <input 
                     type="text" 
